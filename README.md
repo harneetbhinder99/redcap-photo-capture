@@ -1,2 +1,1 @@
-# redcap-photo-capture
-Redcap photo capture external modules
+# photo-capture
