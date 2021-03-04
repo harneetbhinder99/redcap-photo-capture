@@ -1,6 +1,6 @@
 {
   "name": "Photo Capture",
-  "namespace": "GenV\\PhotoCapture",
+  "namespace": "MCRI\\PhotoCapture",
   "description": "this external module is helpful for capture image from device's camera of user rather uploading file into surveys",
   "permissions": [
     "redcap_save_record",
