@@ -11,7 +11,6 @@ use ExternalModules\AbstractExternalModule;
 use ExternalModules\ExternalModules;
 use REDCap;
 
-define("ATTEMPT_LIMIT", 30);
 
 /**
  * PhotoCapture class for PhotoCapture.
@@ -40,7 +39,7 @@ class PhotoCapture extends AbstractExternalModule
   {
 
     //get target upload field from config
-    $target_fields = AbstractExternalModule::getProjectSetting('phca_target_upload_field');
+    $target_fields = $this->getProjectSetting('phca_target_upload_field');
 ?>
     <style>
       /* CSS comes here */
