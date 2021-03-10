@@ -1,40 +1,39 @@
 {
   "name": "Photo Capture",
   "namespace": "MCRI\\PhotoCapture",
-  "description": "this external module is helpful for capture image from device's camera of user rather uploading file into surveys",
-  "permissions": [
-    "redcap_save_record",
-    "redcap_data_entry_form_top",
-    "redcap_survey_page_top"
-  ],
-  "authors": [{
-    "name": "Harneet",
-    "email": "harneet.bhinder@mcri.org.au",
-    "institution": "MCRI"
-  }],
-  "project-settings": [{
-    "key": "phca_source_target_pairs",
-    "name": "instrument-upload_field pair",
-    "required": true,
-    "type": "sub_settings",
-    "repeatable": true,
-    "sub_settings": [{
-        "key": "phca_source_instrument",
-        "name": "Name of survey instrument that should be saved to the upload field",
-        "required": true,
-        "type": "form-list",
-        "repeatable": false
-      },
+  "authors": [
       {
-        "key": "phca_target_upload_field",
-        "name": "Field where captured image will be saved",
-        "required": true,
-        "type": "field-list",
-        "repeatable": false
+          "name": "Harneet Bhinder",
+          "email": "Harneet.bhinder @mcri.edu.au",
+          "institution": "Murdoch Children's Research Institute"
       }
-    ]
-  }],
+  ],
+
+  "description": "This module enables photo capture feature with the camera activation for forms and surveys. This can be useful to capture a photo from live camera. Photo can be saved or discard as per the preference",
+  "permissions": [
+          "redcap_save_record",
+          "redcap_data_entry_form_top",
+          "redcap_survey_page_top"
+  ],
+  "project-settings": [
+      {
+          "name": "instrument-upload_field pair",
+          "key": "phca_source_target_pairs",
+          "type": "sub_settings",
+          "required": true,
+          "repeatable": true,
+          "sub_settings": [
+              {
+                   "name": "Name of survey instrument that should be saved to the upload field",
+                   "key": "phca_source_instrument",
+                   "required": true,
+                   "type": "field-list",
+                   "repeatable": false
+              }
+          ]
+      } 
+  ],
   "compatibility": {
-    "redcap-version-min": "8.0.3"
+      "redcap-version-min": "8.0.3"
   }
 }
